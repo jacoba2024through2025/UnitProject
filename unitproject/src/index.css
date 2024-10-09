@@ -1,13 +1,78 @@
 body {
+  background-color: #D8DBE2;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  background-color: #A9BCD0;
+  color: #373F51;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: #373F51;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+  
+}
+
+.nav a .button-text {
+  margin-left: 0.5em;
+}
+
+.site-title {
+  font-size: 25pt;
+}
+
+
+.nav li.active {
+  background-color: red;
+}
+.nav li:hover {
+  background-color: #aaadb3;
+  border-radius: 10%;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  text-decoration: underline;
+}
+
+.img {
+  width: 4em;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.icon-container {
+  align-content: center;
+  margin-right: 25em;
+
+}
+
+.form-container {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
