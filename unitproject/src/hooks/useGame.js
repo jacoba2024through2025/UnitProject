@@ -6,6 +6,8 @@ const useGame = (wordSolution) => {
   const [guesses, setGuesses] = useState([...Array(6)]);
   const [history, setHistory] = useState([]); 
   const [isCorrect, setIsCorrect] = useState(false);
+  
+  //decides whether the player has lost or
 
   const formatUserGuess = () => {
     let solutionArray = [...wordSolution];
@@ -48,6 +50,11 @@ const useGame = (wordSolution) => {
     setTurn((prevTurn) => prevTurn + 1);
     setCurrentGuess('');
   };
+
+  
+  
+
+  
 
   const handleKeyUp = ({ key }) => {
     if (key === "Enter") {

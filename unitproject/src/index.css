@@ -5,6 +5,7 @@ body {
 
 *{
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 .nav {
@@ -65,7 +66,7 @@ body {
 
 .icon-container {
   align-content: center;
-  margin-right: 25em;
+  margin-right: 66em;
 
 }
 
@@ -77,22 +78,78 @@ body {
     
 }
 
+.box-style {
+  background-color: #373F51;
+}
 
+
+
+.header-style {
+  text-align: center;
+  
+  background-color: #1B1B1E;
+  color: #A9BCD0;
+  margin-right: 30em;
+  margin-left: 30em;
+  border: 3px #58A4B0;
+  border-radius: 3px;
+}
+
+.current-guess-styling {
+  text-align: center;
+  color: #A9BCD0;
+  background-color: #1B1B1E;
+  font-size: 2em;
+  margin-right: 25em;
+  margin-left: 25em;
+  border-radius: 0.2143em;
+
+}
+
+.flex-container {
+  display: flex;
+	align-items: center;
+}
+
+.solution-length {
+  text-align: center;
+  margin-top: 5em;
+  font-size: 2em;
+}
 
 .row {
   text-align: center;
   display: flex;
   justify-content: center;
+  
+  
 }
+/*original coloring: border: #bbb*/
+/*custom color codes for project: #D8DBE2 #A98CDO #58A4BO #373F51 #1B1B1E*/
+
 .row > div {
   display: block;
   width: 60px;
   height: 60px;
-  border: 1px solid #bbb;
+  border: 3px solid #A9BCD0 ;
   margin: 4px;
   text-align: center;
   line-height: 60px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2.5em;
+  border-radius: 3%
+}
+
+.row > div.green {
+  background: #5ac85a;
+  border-color: #5ac85a;
+}
+.row > div.grey {
+  background: #a1a1a1;
+  border-color: #a1a1a1;
+}
+.row > div.yellow {
+  background: #e2cc68;
+  border-color: #e2cc68;
 }

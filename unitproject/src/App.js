@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import Navbar from './Navbar'
+import Message from './components/Message'
 import Wordle from './components/Wordle'
+
 
 
 
 function App() {
 	//wordSolution is the random solution for each game the user wants to play
 	const [wordSolution, setWord] = useState('')
+	
+	
 		
 	const changeWordToShow= () =>{
 	fetch('https://random-word-api.herokuapp.com/word')
@@ -15,9 +20,9 @@ function App() {
 	.then(data => {
 		if (data.length > 0) {
 			for(let word of data){
-				setWord(word);
+				setWord(word)
 				
-				break;
+				break
 				
 			}
 		}
@@ -28,12 +33,30 @@ function App() {
 		console.log("Error " + err);
 	});
 	}
+
+	
+
+
+	useEffect(() => {
+        changeWordToShow();
+    }, []);
+
+	
 	
 	return (
 		<>
-			<button type= "button" onClick={()=>changeWordToShow()}>Change Word </button>
+			<Navbar />
+			<Message />
 			{wordSolution && <Wordle wordSolution={wordSolution} /> }
-			Word name: {wordSolution} Length: {wordSolution.length}
+			
+				<div className='solution-length'>
+					Length: {wordSolution.length}
+					
+				</div>
+			
+			
+			
+			
 			
 		</>
 		

@@ -21,17 +21,12 @@ export default function Navbar() {
         <li>
           
         <a href="travel">
-            <i className="fa-solid fa-location-dot"></i>
-            <span className="button-text">View Travel Plans</span>
+            <i class="fa-solid fa-circle-info"></i>
+            <span className="button-text">View Game Stats</span>
           </a>
         </li>
 
-        <li>
-        <a href="about">
-            <i class="fa-solid fa-circle-info"></i>
-            <span className="button-text">About</span>
-          </a>
-        </li>
+        
 
         
       </ul>
