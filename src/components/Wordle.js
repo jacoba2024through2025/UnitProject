@@ -28,7 +28,15 @@ export default function Wordle({ wordSolution }) {
         <Grid guesses={guesses} wordLength={wordSolution.length} />
       </div>
       <div className='current-guess-styling'>
-        Current guess: {currentGuess}
+      {turn >= 6 && !isCorrect && (
+        <button className='button-active' onClick={handleReload}>Try Again</button>
+        
+      )}
+      {isCorrect && (
+        
+        <button className='button-active' onClick={handleReload}>Play Again</button>
+      )}
+        Guess(Length:{wordSolution.length}): {currentGuess}
         
       </div>
       <div className='letters-wrong-styling'>
@@ -36,22 +44,14 @@ export default function Wordle({ wordSolution }) {
           Letters Wrong: {wrongLetters}
       </div>
 
-      {isCorrect && (
-        <button className='button-active' onClick={handleReload}>Play Again</button>
-      )}
-
-      <div className='winner-message'>
-        {messageToDisplay}
-      </div>
+     
 
       
-      <div className='loser-message'> 
-        {loserMessage}
-      </div>
+
       
-      {turn >= 6 && !isCorrect && (
-        <button className='button-active' onClick={handleReload}>Try Again</button>
-      )}
+      
+      
+      
       
       
 

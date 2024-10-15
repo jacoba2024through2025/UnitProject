@@ -44,7 +44,9 @@ const useGame = (wordSolution) => {
   };
 
   const addNewGuess = (changeUserGuess) => {
+    
     if (currentGuess === wordSolution) {
+      
       setIsCorrect(true);
       
       setMessageToDisplay('You have won Word Hunt')

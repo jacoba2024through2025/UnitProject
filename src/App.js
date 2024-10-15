@@ -11,7 +11,12 @@ function App() {
       'apple', 'banana', 'cherry', 'date', 'elderberry',
       'fig', 'grape', 'honeydew', 'kiwi', 'lemon',
       'mango', 'nectarine', 'orange', 'papaya', 'quince',
-      'raspberry', 'strawberry', 'tangerine', 'watermelon'
+      'raspberry', 'strawberry', 'tangerine', 'watermelon',
+	  'procurement', 'management', 'community', 'corelogic','slack', 'gamble',
+	  'fire', 'arson', 'grand', 'grape', 'float', 'osteoperosis', 'scoliosis',
+	  'power', 'alien', 'minecart', 'versus', 'rhombus', 
+	  'tetradecahedron', 'shapes', 'ham', 'egg', 'hungry', 'hamburger',
+	  'duck', 'javascript', 'benchmark', 'hexagon', 'sulfur', 'dioxide', 'airbnb'
     ];
 
     const randomIndex = Math.floor(Math.random() * randomWords.length);
@@ -21,15 +26,14 @@ function App() {
   useEffect(() => {
     changeWordToShow();
   }, [changeWordToShow]);
-
+  console.log(wordSolution)
   return (
     <>
       <Navbar />
       <Message />
+	  
       {wordSolution && <Wordle wordSolution={wordSolution} />}
-      <div className='solution-length'>
-        Length: {wordSolution.length}
-      </div>
+      
     </>
   );
 }

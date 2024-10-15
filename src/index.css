@@ -19,16 +19,17 @@ body {
   
 }
 
-.button-active {
-  margin-bottom: 50em;
-  margin-left: 35em;
+.button-active  {
+  margin-bottom: -8em;
+  margin-left: 0.2em;
   color: #A9BCD0;
   background-color:#1B1B1E;
-  width: 10em;
+  width: 5em;
   border-radius: 3%;
   
   
 }
+
 
 .nav ul {
   padding: 0;
@@ -80,7 +81,7 @@ body {
 
 .logo-container {
   display: flex;
-  margin-left: 65em;
+  margin-left: 43em;
 }
 
 .icon-container {
@@ -108,8 +109,9 @@ body {
   
   background-color: #1B1B1E;
   color: #A9BCD0;
-  margin-right: 30em;
-  margin-left: 30em;
+  margin-left: 15em;
+  margin-right: 15em;
+  
   border: 3px #58A4B0;
   border-radius: 3px;
 }
@@ -119,42 +121,29 @@ body {
   color: #A9BCD0;
   background-color: #1B1B1E;
   font-size: 2em;
-  margin-right: 25em;
-  margin-left: 25em;
+  margin-right: 15em;
+  margin-left: 15em;
   border-radius: 0.2143em;
+  margin-top: 0.02em;
 
 }
 
 .letters-wrong-styling {
-  margin-top: 2em;
+  margin-top: 0.5em;
   text-align: center;
   color: #A9BCD0;
   background-color: #1B1B1E;
   font-size: 2em;
-  margin-right: 25em;
-  margin-left: 25em;
-  border-radius: 0.5143em;
+  margin-right: 15em;
+  margin-left: 15em;
+  border-radius: 0.2143em;
   background-color: black;
 
 }
 
-.winner-message {
-  margin-left: 100em;
-  margin-top: -0.025em;
-  margin-right: 0.1em;
-  border-radius: 0.5143em;
-  color: black;
-  font-family: monospace;
-  
-}
 
-.loser-message {
-  margin-left: 25em;
-  margin-top: -8em;
-  border-radius: 0.5143em;
-  color: black;
-  font-family: monospace;
-}
+
+
 
 
 
@@ -163,9 +152,14 @@ body {
 	align-items: center;
 }
 
+.winner-message {
+  margin-left: 4em;
+  margin-top: 1em;
+}
+
 .solution-length {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 0.2em;
   font-size: 2em;
 }
 
